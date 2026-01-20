@@ -13,7 +13,7 @@
 body {margin:0;font-family:'Segoe UI',Arial,sans-serif;line-height:1.9;background:#f2f5f3;color:#333;}
 header {background:linear-gradient(135deg,#2e7d32,#66bb6a);color:white;padding:80px 20px;text-align:center;}
 header h1 {font-size:3.2em;margin-bottom:10px;}
-header img{width:100%;max-height:400px;object-fit:cover;margin-top:20px;border-radius:16px;}
+header img{max-height:300px;object-fit:cover;margin-top:20px;border-radius:16px;}
 nav {background:#1b5e20;padding:14px;text-align:center;position:sticky;top:0;z-index:1000;}
 nav a {color:white;margin:0 12px;text-decoration:none;font-weight:bold;}
 nav a:hover{text-decoration:underline;}
@@ -49,7 +49,7 @@ a.enlace {color:#43a047;font-weight:bold;text-decoration:underline;}
 <header>
 <h1>La Web Definitiva de Alimentación Saludable</h1>
 <p>Artículos, recetas, planificaciones y herramientas interactivas para mejorar tu salud</p>
-<img class="hero-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=80" alt="Mesa saludable">
+<img class="hero-img" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80" alt="Mesa saludable">
 </header>
 
 <nav>
@@ -70,7 +70,7 @@ a.enlace {color:#43a047;font-weight:bold;text-decoration:underline;}
 
 <section id="vision">
 <h2>Visión y filosofía</h2>
-<img class="hero-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=80" alt="Mesa saludable">
+<img class="hero-img" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80" alt="Mesa saludable">
 <p>Aprender a alimentarse correctamente es la base de una vida plena. Esta web combina información científica, visualizaciones y herramientas prácticas para mejorar hábitos y estado físico.</p>
 <div class="highlight">🍏 Comer mejor no es sacrificio, es educación y hábitos inteligentes.</div>
 </section>
@@ -90,7 +90,7 @@ a.enlace {color:#43a047;font-weight:bold;text-decoration:underline;}
 <div class="grid">
 <div class="card"><img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Frutas"><h3>Frutas y verduras</h3><p>Ricas en fibra y antioxidantes. Al menos 5 porciones diarias y variedad de colores.</p></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1604908554164-891e8a17f71b" alt="Proteínas"><h3>Proteínas</h3><p>Legumbres, huevos, carnes magras y pescado para reparación y crecimiento muscular.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1582515073490-d05b8b1b7bcf" alt="Carbohidratos"><h3>Carbohidratos</h3><p>Elige integrales para energía constante: avena, arroz integral, patatas.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1582515073490-399813b7c299" alt="Carbohidratos (avena y arroz)"> <h3>Carbohidratos</h3><p>Elige integrales para energía constante: avena, arroz integral, patatas.</p></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1505253216365-6c3d9b8a4b90" alt="Grasas"><h3>Grasas saludables</h3><p>Aguacate, aceite de oliva y semillas para saciedad y hormonas.</p></div>
 </div>
 <div class="infografia">
@@ -106,18 +106,19 @@ a.enlace {color:#43a047;font-weight:bold;text-decoration:underline;}
 
 <section id="dietas">
 <h2>Comparativa de dietas</h2>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1510626176961-4b01f9fdf2dc" alt="Dieta Mediterránea"><h3>Mediterránea</h3><p>Equilibrada y variada, ideal para todo público.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1556912995-2f04e72c7d13" alt="Dieta Vegetariana"><h3>Vegetariana</h3><p>Basada en plantas y derivados animales. Salud y ética.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1556912167-f0f7bcb4d2d1" alt="Dieta Vegana"><h3>Vegana</h3><p>Excluye productos animales. Conciencia ecológica.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" alt="Dieta Deportiva"><h3>Deportiva</h3><p>Alto aporte proteico y energético. Perfecta para atletas.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1556912115-4f9b5a51a0de" alt="Dieta Hipocalórica"><h3>Hipocalórica</h3><p>Control de calorías. Ideal para pérdida de peso.</p></div>
-</div>
+<table>
+<tr><th>Dieta</th><th>Características</th><th>Ideal para</th></tr>
+<tr><td>Mediterránea</td><td>Equilibrada y variada <img src="https://images.unsplash.com/photo-1582515073490-399813b7c299" alt="Zanahoria" style="height:50px;margin-left:8px;border-radius:8px;"></td><td>Todo público</td></tr>
+<tr><td>Vegetariana</td><td>Basada en plantas y derivados animales <img src="https://images.unsplash.com/photo-1529692236671-f1c6788d8b29" alt="Casa verde" style="height:50px;margin-left:8px;border-radius:8px;"></td><td>Salud y ética</td></tr>
+<tr><td>Vegana</td><td>Excluye productos animales</td><td>Conciencia ecológica</td></tr>
+<tr><td>Hipocalórica</td><td>Control de calorías</td><td>Pérdida de peso</td></tr>
+<tr><td>Deportiva</td><td>Alto aporte proteico y energético</td><td>Atletas</td></tr>
+</table>
 </section>
 
 <section id="planificacion">
 <h2>Planificación semanal visual</h2>
-<img class="hero-img" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" alt="Planificación comidas">
+<img class="hero-img" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1000&q=80" alt="Planificación comidas">
 <ul>
 <li>Desayunos, almuerzos y cenas equilibrados</li>
 <li>Snacks saludables: frutos secos, yogur, frutas</li>
@@ -164,23 +165,22 @@ a.enlace {color:#43a047;font-weight:bold;text-decoration:underline;}
 <label>Peso (kg):</label><br><input type="number" id="peso" placeholder="Ej. 70"><br>
 <label>Altura (cm):</label><br><input type="number" id="altura" placeholder="Ej. 175"><br>
 <label>Edad:</label><br><input type="number" id="edad" placeholder="Ej. 25"><br>
-<label>Género:</label><br>
-<select id="genero"><option value="hombre">Hombre</option><option value="mujer">Mujer</option></select><br>
+<label>Género:</label><br><select id="genero"><option value="hombre">Hombre</option><option value="mujer">Mujer</option></select><br>
 <button onclick="calcularEstado()">Calcular</button>
 <div class="result" id="resultado"></div>
 <script>
 function calcularEstado(){
-let peso=parseFloat(document.getElementById('peso').value);
-let altura=parseFloat(document.getElementById('altura').value)/100;
-let edad=parseInt(document.getElementById('edad').value);
-let genero=document.getElementById('genero').value;
-if(!peso||!altura||!edad){document.getElementById('resultado').innerHTML="Completa todos los campos.";return;}
-let imc=peso/(altura*altura);
-let estado="",consejo="";
-if(imc<18.5){estado="Muy bajo";consejo="Aumenta ingesta calórica con alimentos saludables y proteínas.";}
-else if(imc<24.9){estado="Normal";consejo="Mantén hábitos actuales y actividad física regular.";}
-else if(imc<29.9){estado="Sobrepeso";consejo="Incrementa ejercicio y reduce azúcares y ultraprocesados.";}
-else{estado="Obeso";consejo="Consulta a un profesional para un plan gradual y seguro.";}
+let peso = parseFloat(document.getElementById('peso').value);
+let altura = parseFloat(document.getElementById('altura').value)/100;
+let edad = parseInt(document.getElementById('edad').value);
+let genero = document.getElementById('genero').value;
+if(!peso || !altura || !edad){document.getElementById('resultado').innerHTML="Completa todos los campos."; return;}
+let imc = peso / (altura*altura);
+let estado="", consejo="";
+if(imc<18.5){estado="Muy bajo"; consejo="Aumenta ingesta calórica con alimentos saludables y proteínas."; }
+else if(imc<24.9){estado="Normal"; consejo="Mantén hábitos actuales y actividad física regular.";}
+else if(imc<29.9){estado="Sobrepeso"; consejo="Incrementa ejercicio y reduce azúcares y ultraprocesados.";}
+else{estado="Obeso"; consejo="Consulta a un profesional para un plan gradual y seguro.";}
 document.getElementById('resultado').innerHTML=`Tu IMC es ${imc.toFixed(1)}.<br>Estado: ${estado}<br>Consejo: ${consejo}`;
 }
 </script>
