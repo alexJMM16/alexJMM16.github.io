@@ -13,6 +13,7 @@
 body {margin:0;font-family:'Segoe UI',Arial,sans-serif;line-height:1.9;background:#f2f5f3;color:#333;}
 header {background:linear-gradient(135deg,#2e7d32,#66bb6a);color:white;padding:80px 20px;text-align:center;}
 header h1 {font-size:3.2em;margin-bottom:10px;}
+header img{max-height:300px;object-fit:cover;margin-top:20px;border-radius:16px;}
 nav {background:#1b5e20;padding:14px;text-align:center;position:sticky;top:0;z-index:1000;}
 nav a {color:white;margin:0 12px;text-decoration:none;font-weight:bold;}
 nav a:hover{text-decoration:underline;}
@@ -40,6 +41,7 @@ button:hover {background:#388e3c;}
 .article-card{background:#fffde7;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,0.08);}
 .article-card img{width:100%;border-radius:12px;margin-bottom:12px;}
 footer{background:#1b5e20;color:white;text-align:center;padding:50px;}
+a.enlace {color:#43a047;font-weight:bold;text-decoration:underline;}
 </style>
 </head>
 <body>
@@ -47,6 +49,7 @@ footer{background:#1b5e20;color:white;text-align:center;padding:50px;}
 <header>
 <h1>La Web Definitiva de Alimentación Saludable</h1>
 <p>Artículos, recetas, planificaciones y herramientas interactivas para mejorar tu salud</p>
+<img class="hero-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1000&h=400&fit=crop" alt="Mesa saludable">
 </header>
 
 <nav>
@@ -67,7 +70,7 @@ footer{background:#1b5e20;color:white;text-align:center;padding:50px;}
 
 <section id="vision">
 <h2>Visión y filosofía</h2>
-<img class="hero-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Mesa saludable">
+<img class="hero-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63?w=1000&h=400&fit=crop" alt="Mesa saludable">
 <p>Aprender a alimentarse correctamente es la base de una vida plena. Esta web combina información científica, visualizaciones y herramientas prácticas para mejorar hábitos y estado físico.</p>
 <div class="highlight">🍏 Comer mejor no es sacrificio, es educación y hábitos inteligentes.</div>
 </section>
@@ -135,9 +138,24 @@ footer{background:#1b5e20;color:white;text-align:center;padding:50px;}
 <section id="recetas">
 <h2>Recetas rápidas y saludables</h2>
 <div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Ensalada"><h3>Ensalada Mediterránea</h3><p>Tomate, pepino, aceitunas, queso feta, aceite de oliva. 10 min.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1605475120417-9e1e75f8a9e5" alt="Avena"><h3>Avena nocturna</h3><p>Avena, leche vegetal, frutas y nueces. Preparación rápida.</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Smoothie"><h3>Smoothie verde</h3><p>Espinaca, manzana, plátano, agua o leche vegetal.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Ensalada">
+<h3>Ensalada Mediterránea</h3>
+<p>Tomate, pepino, aceitunas, queso feta, aceite de oliva. 10 min.</p>
+<a href="recetas/ensalada-mediterranea.html" class="enlace">Ver pasos completos →</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605475120417-9e1e75f8a9e5" alt="Avena">
+<h3>Avena nocturna</h3>
+<p>Avena, leche vegetal, frutas y nueces. Preparación rápida.</p>
+<a href="recetas/avena-nocturna.html" class="enlace">Ver pasos completos →</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Smoothie">
+<h3>Smoothie verde</h3>
+<p>Espinaca, manzana, plátano, agua o leche vegetal.</p>
+<a href="recetas/smoothie-verde.html" class="enlace">Ver pasos completos →</a>
+</div>
 </div>
 </section>
 
@@ -171,16 +189,25 @@ function calcularEstado(){
 <section id="articulos">
 <h2>Blog y artículos internos</h2>
 <div class="grid">
-<div class="article-card"><img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Artículo 1"><h3>10 Hábitos de alimentación saludable</h3><p>Aprende hábitos sencillos para mejorar tu nutrición y energía diaria.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1556912996-6d7bdb5c3b97" alt="Artículo 2"><h3>Cómo planificar tus comidas semanales</h3><p>Organiza desayunos, almuerzos y cenas de forma efectiva y visual.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1588776814546-d8c78e1cba4c" alt="Artículo 3"><h3>Superalimentos: realidad o mito</h3><p>Descubre qué alimentos realmente aportan beneficios y cuáles son marketing.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1604908177530-bff36f6d52d2" alt="Artículo 4"><h3>Errores comunes en dietas</h3><p>Evita los fallos más frecuentes al intentar mejorar tu alimentación.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1580910051075-f7c80e9b676e" alt="Artículo 5"><h3>Snacks saludables para llevar</h3><p>Ideas rápidas y nutritivas para comer entre horas sin culpas.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1598515217064-83e7a2d2efb6" alt="Artículo 6"><h3>Hidratación: cómo y cuándo beber agua</h3><p>Importancia de la hidratación y señales de que necesitas más líquidos.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1590073244332-49d1fda174a4" alt="Artículo 7"><h3>Proteínas: cuánta y cuándo</h3><p>Conoce tus necesidades diarias según peso, edad y actividad física.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1587316745621-3757c7076f56" alt="Artículo 8"><h3>Carbohidratos: aliados o enemigos</h3><p>Aprende a elegir los mejores carbohidratos según tus objetivos.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1580910051021-7c7c8c4f8bb0" alt="Artículo 9"><h3>Grasas saludables: esenciales</h3><p>Descubre por qué las grasas no son enemigas y cuáles incluir en tu dieta.</p></div>
-<div class="article-card"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Artículo 10"><h3>Planificación visual de comidas</h3><p>Guía paso a paso para organizar tus platos y mejorar adherencia a hábitos.</p></div>
+<div class="article-card">
+<img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Artículo 1">
+<h3>10 Hábitos de alimentación saludable</h3>
+<p>Aprende hábitos sencillos para mejorar tu nutrición y energía diaria.</p>
+<a href="blog/habitos-alimentacion-saludable.html" class="enlace">Leer artículo completo →</a>
+</div>
+<div class="article-card">
+<img src="https://images.unsplash.com/photo-1556912996-6d7bdb5c3b97" alt="Artículo 2">
+<h3>Cómo planificar tus comidas semanales</h3>
+<p>Organiza desayunos, almuerzos y cenas de forma efectiva y visual.</p>
+<a href="blog/planificar-comidas-semanales.html" class="enlace">Leer artículo completo →</a>
+</div>
+<div class="article-card">
+<img src="https://images.unsplash.com/photo-1588776814546-d8c78e1cba4c" alt="Artículo 3">
+<h3>Superalimentos: realidad o mito</h3>
+<p>Descubre qué alimentos realmente aportan beneficios y cuáles son marketing.</p>
+<a href="blog/superalimentos-realidad-mito.html" class="enlace">Leer artículo completo →</a>
+</div>
+<!-- Aquí puedes añadir más artículos con la misma estructura -->
 </div>
 </section>
 
@@ -198,4 +225,15 @@ function calcularEstado(){
 <h2>Preguntas frecuentes</h2>
 <h3>¿Puedo comer sano sin dieta estricta?</h3><p>Sí, con hábitos sostenibles y elecciones inteligentes.</p>
 <h3>¿Cuántas comidas al día?</h3><p>Depende, lo importante es consistencia y equilibrio.</p>
-<h3>¿Qué hacer si no tengo tiempo?</h3><p>Planifica, usa recetas rápidas y repite
+<h3>¿Qué hacer si no tengo tiempo?</h3><p>Planifica, usa recetas rápidas y repite platos base.</p>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 - La Web Definitiva de Alimentación Saludable</p>
+<p>Contenido informativo. No sustituye asesoramiento profesional.</p>
+</footer>
+
+</body>
+</html>
