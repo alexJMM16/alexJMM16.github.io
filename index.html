@@ -240,6 +240,25 @@ function calcularEstado(){
     <a href="legal/contacto.html" style="color:#a5d6a7; margin:0 10px;">Contacto</a>
   </p>
 </footer>
+<!-- Aviso de cookies -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#2e7d32;color:white;padding:15px;text-align:center;box-shadow:0 -4px 12px rgba(0,0,0,0.2);z-index:9999;">
+  Esta web utiliza cookies para mejorar tu experiencia y mostrar anuncios relevantes mediante Google AdSense. 
+  <a href="legal/galletas.html" style="color:#c8e6c9;text-decoration:underline;">Más info</a>
+  <button id="accept-cookies" style="margin-left:15px;padding:8px 14px;background:#81c784;color:white;border:none;border-radius:6px;cursor:pointer;">Aceptar</button>
+</div>
+
+<script>
+  // Oculta banner y guarda aceptación
+  document.getElementById('accept-cookies').onclick = function(){
+    document.getElementById('cookie-banner').style.display = 'none';
+    localStorage.setItem('cookiesAccepted','true');
+  }
+
+  // Comprueba si ya aceptó
+  if(localStorage.getItem('cookiesAccepted') === 'true'){
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
